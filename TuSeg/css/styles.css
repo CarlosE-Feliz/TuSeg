@@ -2,15 +2,33 @@ body{
     margin: 0%;
     background-color: whitesmoke;
 }
+@media screen and (max-width:414px) {
+    .desplazarTexto{
+        width: 321px;
+        height: auto;
+        float: none;
+    }
+    .lema marquee h2{
+        width: 100%;
+        font-size: medium;
+    }
+    .main{
+    display: none;    
+    }
+    
+
+    /* Aquí correspondería el código CSS para pantallas de 320px */
+  
+  }
 .centrar{
     width: 90%;
     max-width: 1000px;
     margin: auto;
-    overflow: hidden;  
-  }
+    overflow: hidden;
+}
   .desplazarTexto{
       margin-top: 20px;
-      color: #d4c7c7;
+      color: #e2dddd;
       line-height: 200px;
       float: left;
       font-size: 40px;
@@ -184,6 +202,7 @@ body{
 }
 .main{
     display: flex;
+   padding-left: 25px;
 }
 .casas>figure{
     height: 250px;
@@ -240,11 +259,53 @@ body{
 .lema{
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
 }
 .lema>marquee>h2{
-    color: rgb(37, 37, 34);
+    color: rgba(99, 99, 90, 0.664);
     text-shadow: 1px 6px 6px rgba(20, 20, 20, 0.3);
 
 }
+table{
+    width: 100px;
+    height: 10px;
+}
+footer{
+    background-color: rgb(6, 2, 1);
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    opacity:0.9 ;
+    
+}
+.valores{
+    height: 100px;
+    align-content: center;
+    /* box-shadow: 1px 7px 8px rgba(20, 20, 20, 0.3); */
+}
+.headerFooter{
+    background-color: rgb(22, 17, 16);
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-between;
+    /* opacity: 0.5; */
+}
+.headerFooter>h3{
+    color: whitesmoke;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.mainFooter>p{
+    color: blanchedalmond;
+    line-height: 30px;
+    
+}
+.mainFooter{
+    display: flex;
+    text-align: center;
+}
 
-
+.footerParagraph{
+    padding: 10px;
+}
